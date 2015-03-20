@@ -48,6 +48,20 @@ public class ContaCorrente {
 			return false;
 	}
 
-	
+	public void transferir(ContaCorrente destino, double valor) {
+		String mensagem = null;
+
+		if (this.existeSaldoSuficiente(valor) == true) {
+			
+			this.sacar(valor);
+			
+			destino.depositar(valor);
+			
+			mensagem = "OK";
+		} else
+			mensagem = "Não transferiu";
+
+		System.out.println(mensagem);
+	}
 
 }
