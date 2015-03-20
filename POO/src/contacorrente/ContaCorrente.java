@@ -5,6 +5,7 @@ public class ContaCorrente {
 	private double saldo;
 	private Correntista correntista;
 	
+	// comentario
 	public ContaCorrente(int nro, Correntista correntista) {
 		numero = nro;
 		this.correntista = correntista;
