@@ -6,12 +6,6 @@ public class ContaCorrente {
 	private double saldo;
 	private Correntista correntista;
 
-	/**
-	 * Construtor
-	 * 
-	 * @param nro
-	 * @param correntista
-	 */
 	public ContaCorrente(int nro, Correntista correntista) {
 		numero = nro;
 		this.correntista = correntista;
