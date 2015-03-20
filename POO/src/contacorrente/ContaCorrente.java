@@ -63,7 +63,7 @@ public class ContaCorrente {
 			return true;
 		else
 			return false;
-	}
+	} 
 
 	private boolean existeSaldoSuficiente(double valor) {
 		if (saldo >= valor)
