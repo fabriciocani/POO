@@ -4,24 +4,18 @@ public class Testador {
 
 	public static void main(String[] args) {
 		
-		Correntista cor = new Correntista("Ximbinha","2334556");
+		Correntista c1 = new Correntista("Juquinha","234567");
+		ContaCorrente cc1 = new ContaCorrente(1,c1);
+		cc1.depositar(1000);
 		
-		ContaCorrente cc = new ContaCorrente(2345, cor );
+		Correntista c2 = new Correntista("Noah Morto","332224");
+		ContaCorrente cc2 = new ContaCorrente(2,c2);
+		cc2.depositar(1000);
 		
-		cc.depositar(500);
+		cc1.transferir(cc2, 500);
 		
-		// fazer um método que permita transferir valores de uma
-		// conta corrente para outra
-		
-		System.out.println(cc.getCorrentista().getNome());
-		
-		System.out.println(cc.getSaldo());
-		
-		System.out.println("saque ");
-		
-		cc.sacar(4300);
-		
-		System.out.println(cc.getSaldo());
+		System.out.println("Conta 1: "+cc1.getSaldo());
+		System.out.println("Conta 2: "+cc2.getSaldo());
 		
 	}
 

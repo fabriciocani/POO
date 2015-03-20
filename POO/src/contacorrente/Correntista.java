@@ -3,6 +3,7 @@ package contacorrente;
 public class Correntista {
 	
 	private String nome;
+	
 	private String cpf;
 		
 	public Correntista(String nome, String cpf) {
@@ -19,6 +20,9 @@ public class Correntista {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	
+	
 	public String getCpf() {
 		return cpf;
 	}
